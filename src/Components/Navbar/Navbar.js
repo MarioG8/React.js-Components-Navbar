@@ -1,10 +1,40 @@
 import React from 'react';
+import {
+  Nav,
+  NavLink,
+  Bars,
+  NavMenu,
+  NavBtn,
+  NavBtnLink,
+} from './NavbarElements';
 
 const Navbar = () => {
   return (
-    <div>
-      <h1>Navbar</h1>
-    </div>
+    <>
+      <Nav>
+        <NavLink to='/'>
+          <h1>Logo</h1>
+        </NavLink>
+        <Bars />
+        <NavMenu>
+          <NavLink to='/about' activeStyle>
+            About
+          </NavLink>
+          <NavLink to='/services' activeStyle>
+            Services
+          </NavLink>
+          <NavLink to='/Contact' activeStyle>
+            Contact-Us
+          </NavLink>
+          <NavLink to='/Sign up' activeStyle>
+            Sign-Up
+          </NavLink>
+        </NavMenu>
+        <NavBtn>
+          <NavBtnLink to='/'>Sign In</NavBtnLink>
+        </NavBtn>
+      </Nav>
+    </>
   );
 };
 

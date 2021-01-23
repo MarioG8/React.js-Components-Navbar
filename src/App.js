@@ -1,13 +1,13 @@
 import React from 'react';
 import './App.css';
 import Navbar from './Components/Navbar/Navbar';
+import { BrowserRouter as Router } from 'react-router-dom';
 
 function App() {
   return (
-    <>
+    <Router>
       <Navbar />
-      <h1>Hello Mario! Awesome Full-Stack Developer!</h1>
-    </>
+    </Router>
   );
 }
 
