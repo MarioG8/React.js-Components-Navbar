@@ -3,7 +3,9 @@ import { NavLink as Link } from 'react-router-dom';
 import { FaBars } from 'react-icons/fa';
 
 export const Nav = styled.nav`
-  background: #000;
+  background: #2f2f2f;
+  position: fixed;
+  width: 100%;
   height: 80px;
   display: flex;
   justify-content: space-between;
@@ -12,22 +14,24 @@ export const Nav = styled.nav`
 `;
 
 export const NavLink = styled(Link)`
-  color: #fff;
+  color: #99852c;
   display: flex;
   align-items: center;
   text-decoration: none;
   padding: 0 1rem;
   height: 100%;
   cursor: pointer;
+  font-size: 1.1rem;
 
   &.active {
-    color: #15cdfc;
+    color: #ebc106;
+    text-decoration: underline;
   }
 `;
 
 export const Bars = styled(FaBars)`
   display: none;
-  color: #fff;
+  color: #ebc106;
 
   @media (max-width: 768px) {
     display: block;
@@ -62,9 +66,9 @@ export const NavBtn = styled.nav`
 
 export const NavBtnLink = styled(Link)`
   border-radius: 5px;
-  background: #256ce1;
+  background: #99852c;
   padding: 10px 22px;
-  color: #fff;
+  color: #2f2f2f;
   border: none;
   outline: none;
   cursor: pointer;
@@ -73,7 +77,10 @@ export const NavBtnLink = styled(Link)`
 
   &:hover {
     transition: all 0.3s ease-in-out;
-    background: #fff;
-    color: #010606;
+    background: #1d1b1b;
+    color: #d4b219;
+    border: 1px solid #99852c;
+    outline: 1px solid #d4b219;
+    outline-offset: 2px;
   }
 `;
