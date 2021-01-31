@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { GiAncientColumns, GiCrossedSwords } from 'react-icons/gi';
 import { RiMenu3Line } from 'react-icons/ri';
-import { FaBars, FaTimes } from 'react-icons/fa';
 import { Button } from './Button';
 import './Navbar.css';
 import { IconContext } from 'react-icons/lib';
