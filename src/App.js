@@ -1,27 +1,17 @@
 import React from 'react';
 import './App.css';
-import Navbar from './Components/Navbar/Navbar';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import Home from './pages/Home';
-import Figures from './pages/Figures';
-import More from './pages/More';
-import JoinUs from './pages/Join-us';
-import Stoicism from './pages/Stoicism';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import Navbar from './components/Navbar';
 
-function App() {
+const App = () => {
   return (
-    <Router>
+    <BrowserRouter>
       <Navbar />
-      <Home />
       <Switch>
-        <Route path='/' exact component={Home} />
-        <Route path='/stoicism' exact component={Stoicism} />
-        <Route path='/figures' component={Figures} />
-        <Route path='/more' component={More} />
-        <Route path='/join-us' component={JoinUs} />
+        <Route path='/' />
       </Switch>
-    </Router>
+    </BrowserRouter>
   );
-}
+};
 
 export default App;
